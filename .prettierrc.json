@@ -1,0 +1,9 @@
+{
+  "trailingComma": "es5",
+  "semi": true,
+  "htmlWhitespaceSensitivity": "ignore",
+  "printWidth": 80
+}
+
+
+

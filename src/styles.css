@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    padding: 0 30px;
+    background: var(--p-surface-200);
+}
+
+.my-app-dark body {
+    background-color: var(--p-surface-900);
+}

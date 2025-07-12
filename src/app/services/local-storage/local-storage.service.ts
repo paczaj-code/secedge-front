@@ -13,7 +13,7 @@ interface StorageService<T = string> {
 @Injectable({
   providedIn: 'root',
 })
-export class LocalStorage implements StorageService<string> {
+export class LocalStorageService implements StorageService {
   getItem(key: string): string | null {
     return localStorage.getItem(key);
   }

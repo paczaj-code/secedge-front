@@ -1,17 +1,17 @@
-// local-storage.spec.ts
+// local-storage.service.spec.ts
 import { TestBed } from '@angular/core/testing';
-import { LocalStorage } from './local-storage';
+import { LocalStorageService } from './local-storage.service';
 // import 'zone.js';
 import { provideZonelessChangeDetection } from '@angular/core';
 
-describe('LocalStorage', () => {
-  let service: LocalStorage;
+describe('LocalStorageService', () => {
+  let service: LocalStorageService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
       providers: [provideZonelessChangeDetection()],
     });
-    service = TestBed.inject(LocalStorage);
+    service = TestBed.inject(LocalStorageService);
     spyOn(localStorage, 'getItem').and.callThrough();
     spyOn(localStorage, 'setItem').and.callThrough();
     spyOn(localStorage, 'removeItem').and.callThrough();
